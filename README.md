@@ -1,0 +1,3 @@
+# F-D-Practice
+Here, are the practice code of front end which I'm currently learning using html, css and js...
+These are some basic codes which can be referred to while starting your web development journey and will help you in easy understanding of it.
