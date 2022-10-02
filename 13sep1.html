@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<body>
+<script type="text/javascript">
+addition(2,function(addRes,err)//callback hell
+{//val+5 mei val upar wala 2 use hoga
+	if(!err)
+	{
+		subtraction(addRes,function(subRes,err)
+		{//upar addRes=2+5=7
+			if(!err){
+				multiplication(subRes,function(mulRes,err){//subRes=7-3=4
+					console.log(mulRes);//mulRes=4(subRes)*5=20
+				});
+			}
+		});
+	}
+});
+function addition(val,callback)
+{
+	console.log("add ki starting mei")
+	callback(val+5,false);
+	console.log("add ki ending mei")
+}
+function subtraction(val,callback)
+{
+	console.log("sub ki starting mei")
+	callback(val-3,false);
+	console.log("sub ki ending mei")
+}
+function multiplication(val,callback)
+{
+	console.log("mul ki starting mei")
+	callback(val*5,false);
+	console.log("mul ki ending mei")
+}
+</script>
+</body>
+
+</html>

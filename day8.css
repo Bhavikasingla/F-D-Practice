@@ -1,0 +1,83 @@
+.child {
+    height: 90px;
+    width: 90px;
+    margin: 4px;
+    /*background-color: black;*/
+    flex-direction: column;
+
+    /*padding: 5px;*/
+    /* display: flex; */
+    /*background-color: pink;*/
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.parent {
+    /*display: flex;
+    /*flex-direction: row;*/
+    /* align-items: center; */
+    /*justify-content: space-evenly;*/
+    /*can give start, flex-end, center, space-between, space-around*/
+    /*background-color: aqua;*/
+}
+
+#child1{
+    background-color: red;
+    height: 90px;
+    width: 90px;
+}
+
+#child1:hover {
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    transition-timing-function: steps(4, end);
+    transition-property: all;
+    transition-duration: 4s;
+    /*float: left;*/
+}
+
+#child2 {
+    background-color: green;
+    /*float: left;*/
+}
+
+#child2:hover {
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    transition-timing-function: cubic-bezier(1, 0.5, 1.5, 2);
+    transition-property: all;
+    transition-duration: 4s;
+    /*float: left;*/
+}
+
+#child3 {
+    background-color: blue;
+    /*float: left;*/
+    /*clear: left;*/
+}
+
+#child3:hover {
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    transform: rotate(45deg);
+    transition: transform 6s;
+    /*float: left;*/
+}
+
+#child4 {
+    background-color: yellow;
+    /*float: left;*/
+    /*clear: none;*/
+}
+/**/
+
+#child4:hover {
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    /*transform: skew(30deg, 30deg);*/
+    transform: translate(50px, 150px);
+}

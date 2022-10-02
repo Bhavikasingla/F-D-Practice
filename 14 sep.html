@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<body>
+<script type="text/javascript">
+let object=[
+{name: "abc", age:20},
+{name: "xyz", age: 50}
+]
+function printName() {
+	console.log("print name started")
+	setTimeout(()=>{
+	object.forEach((x)=>{
+	//for(let x in object){
+		console.log(x.name)
+		console.log("print name ended")
+	})
+	},5000);
+}
+
+function insertData(y){
+	let x=new Promise(function(resolve,reject)
+	{
+		let err=true;
+		if(!err)
+		{
+			console.log("print name started")
+	        setTimeout(()=>
+	        {
+		        object.push(y);
+		        //func();
+	        },8000);
+	        console.log("print name ended")
+	        resolve();
+		}
+		else
+		{
+			reject("Error Detected i.e. what we write in reject");
+		}
+	})
+	return x;
+}
+printName();
+insertData({name: "me", age: 19}).then(printName);
+</script>
+</body>
+
+</html>

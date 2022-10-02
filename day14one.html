@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<body>
+<div id="a" style="height: 100px; width: 100px; background-color: pink;">1</div>
+<!-- <button id="c" onclick="stopfn()" >Stop</button> -->
+<script>
+	// let x=setTimeout(b,3000);
+	// function b(){
+	// 	document.getElementById("a").style.width="200px";
+	// 	console.log("Successful");
+	// }
+	// function stopfn(){
+	// 	clearTimeout(x);
+	// }
+	var w=100;
+	var y=100;
+	var x=setInterval(chng,1000);
+	var z=setInterval(chng1,1000);
+
+	function chng()
+	{
+		w+=10;
+		if(w==300){
+			clearInterval(x);
+		}
+		else
+		{
+			document.getElementById("a").style.width=w+"px";
+			console.log(w);
+		}
+    }
+	function chng1()
+	{
+		y+=10;
+		if(y==300){
+			clearInterval(z);
+		}
+		else
+		{
+			document.getElementById("a").style.height=y+"px";
+			console.log(y);
+		}
+		// document.getElementById("a").style.width=w+"px";
+	}//never ending loop to stop use below fn
+
+</script>
+</body>
+
+</html>

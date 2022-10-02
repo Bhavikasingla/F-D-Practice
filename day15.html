@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<body>
+
+<script type="text/javascript">  
+sayhi();//vars are always partialy hoisted
+var name="Bhavika";
+function sayhi()
+{
+ console.log("Old " + name);
+  var name="Singla";//local declaration has more priority here
+ console.log("New " + name); //fns are fully hoisted
+}
+
+function one()
+{
+  two();
+}
+ 
+ function two()
+{
+  three();
+} 
+function three()
+{
+  console.log("Hii");
+}
+one();
+</script>
+
+</body>
+
+</html>

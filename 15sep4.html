@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<body>
+
+<script type="text/javascript">
+	function objs(name, age, gender)
+	{
+		//constructor so obj created here will be strored using this
+		this.name=name;
+		this.age=age;
+		this.gender=gender;
+		
+	}
+	var person=new objs("bhavi",20,"female");
+	console.log(person)
+	var person=new objs("aryan",20,"male");
+	console.log(person)
+	objs.prototype.bio=function(){
+			console.log("I am "+age+" years old");
+		}
+	//prototypes are mechanism by which js objs inherit features from one another
+</script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+h3 {
+    color: pink;
+}
+
+.hi {
+    text-shadow: 1px 1px;
+}
+
+#three {
+    color: yellow;
+}
+
+.box {
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.box2 {
+    visibility: hidden;
+}
+
+#r {
+    background-color: blueviolet;
+}
+
+#k {
+    background-color: yellowgreen;
+}
+

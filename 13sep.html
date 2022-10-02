@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<body>
+<script type="text/javascript">
+let object=[
+{name: "abc", age:20},
+{name: "xyz", age: 50}
+]
+function printName() {
+	console.log("print name started")
+	setTimeout(()=>{
+	object.forEach((x)=>{
+	//for(let x in object){
+		console.log(x.name)
+		console.log("print name ended")
+	})
+	},5000);
+}
+
+function insertData(y,func){
+	console.log("print name started")
+	setTimeout(()=>
+	{
+		object.push(y)
+		console.log("print name ended")
+		func();
+	},8000);
+}
+printName();
+insertData({name: "me", age: 19},printName);
+</script>
+</body>
+
+</html>

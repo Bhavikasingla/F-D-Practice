@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<body>
+
+<script type="text/javascript">
+	function printalph(alph, time)
+	{
+		return new Promise((resolve,reject)=>{
+			setTimeout(()=>{
+				console.log(alph);
+				resolve("Promise resolved");
+			},time)
+		})
+	}
+	function printvwls(){
+		printalph("a",5000);
+		printalph("e",3000);
+		printalph("i",2000);
+		printalph("o",4000);
+		printalph("u",2000);
+	}
+	printvwls();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<body>
+
+<script type="text/javascript">
+	// async-> when u want a fn to perform in async manner(like promises, callback, settimeout), we have to write AWAIT where we want user to hold the code
+	//if async is bnot used yet then we can't use await...
+	async function printalph(alph, time)
+	{
+		return new Promise((resolve,reject)=>{
+			setTimeout(()=>{
+				console.log(alph);
+				resolve("Promise resolved");
+			},time)
+		})
+	}
+	async function printvwls(){
+		await printalph("a",5000);
+		await printalph("e",3000);
+		await printalph("i",2000);
+		await printalph("o",4000);
+		await printalph("u",2000);
+	}
+	printvwls();
+</script>
+</body>
+
+</html>
